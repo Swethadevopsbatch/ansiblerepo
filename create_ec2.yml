@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Create Ec2 instances
+      ec2:
+        key_name: xxxxx
+        instance_type: xxxxx
+        image: xxxxxxxxxx
+        count: 1
+        region: xxxxxxxxxx
+        aws_secret_key: xxxxxxxxxxxxxxxxxxx
+        aws_access_key: xxxxxxxxxxxxxxxxxx
+        vpc_subnet_id: xxxxxxxxxxxxxxxxxxxxx
+        assign_public_ip: xxxx
+
+
